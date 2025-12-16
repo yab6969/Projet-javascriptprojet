@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SupFlix</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="button" data-text="Awesome">
+        <span class="actual-text">SupFlix </span>
+        <span aria-hidden="true" class="hover-text">SupFlix  </span>
+      </a>
+      
+      <nav class="nav-right">
+        <ul>
+          <li><a href="index.html" class="button1">Accueil</a></li>
+          <li><a href="search.html" class="button1">Recherche</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1>Films en Tendance</h1>
+      
+      <div id="loading" class="loading" style="display:block">
+        <div id="loader">
+          <div class="ls-particles ls-part-1"></div>
+          <div class="ls-particles ls-part-2"></div>
+          <div class="ls-particles ls-part-3"></div>
+          <div class="ls-particles ls-part-4"></div>
+          <div class="ls-particles ls-part-5"></div>
+          <div class="lightsaber ls-left ls-green"></div>
+          <div class="lightsaber ls-right ls-red"></div>
+        </div>
+        <p>Chargement des contenus...</p>
+      </div>
+      
+      <div id="error" class="error" style="display:none"></div>
+      
+      <div id="movies" class="movies-grid"></div>
+      
+      <button id="loadMore" class="btn load-more" style="display:none">
+        Charger plus de films
+      </button>
+    </div>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="api.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
